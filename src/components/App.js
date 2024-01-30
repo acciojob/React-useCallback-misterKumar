@@ -1,4 +1,4 @@
-
+// App.js
 import React, { useState, useCallback } from 'react';
 import '../styles/App.css';
 
@@ -32,7 +32,8 @@ function App() {
           Add Skill
         </button>
       </div>
-      <ul>
+      
+      <ul id="skill-list">
         {skills.map((skill, index) => (
           <li key={index} id={`skill-number-${index}`} onClick={() => handleDeleteSkill(index)}>
             {skill}
